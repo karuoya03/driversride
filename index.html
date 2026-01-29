@@ -470,7 +470,68 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Photo Gallery Styles - Adopted from example */
+        /* Design Alternative Cards */
+        .design-alternative-card {
+            background-color: var(--light-gray);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary);
+        }
+
+        .design-alternative-card.baseline {
+            border-left-color: var(--gray);
+        }
+
+        .design-alternative-card.transitional {
+            border-left-color: var(--info-blue);
+        }
+
+        .design-alternative-card.final {
+            border-left-color: var(--success-green);
+        }
+
+        .design-alternative-card h4 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 22px;
+        }
+
+        .design-alternative-card h4 span {
+            color: var(--primary);
+        }
+
+        .improvement-item {
+            background-color: rgba(40, 167, 69, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 3px solid var(--success-green);
+        }
+
+        .limitation-item {
+            background-color: rgba(220, 53, 69, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 3px solid #dc3545;
+        }
+
+        .feature-detail {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .feature-detail h5 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 18px;
+        }
+
+        /* Photo Gallery Styles */
         .photo-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -516,7 +577,7 @@
             line-height: 1.5;
         }
 
-        /* Model Diagrams - Adopted from example */
+        /* Model Diagrams */
         .model-diagram {
             background-color: var(--primary-light);
             border-radius: 10px;
@@ -968,21 +1029,11 @@
                 <div class="home-content">
                     <div class="home-text">
                         <h2>Drivers <span>Ride</span></h2>
-                        <p>Bridging the Gulf of Evaluation and Execution through innovative interface design that transforms the Bolt ride-hailing experience into a collaborative partnership between users and technology.</p>
-                        <p>Our project focuses on addressing GPS inaccuracies, communication breakdowns, and accessibility gaps in the current Bolt application through landmark verification, transparent system logic, and adaptive interfaces.</p>
+                        <p>Drivers Ride is student-led UX team that applies Human–Computer Interaction (HCI) principles to examine, improve, and assess real-world digital systems, with a strong focus on usability, accessibility, and alignment with user mental models.</p>
+                        <p>Our work prioritizes usability, accessibility, and designing interfaces that align with how users think and interact. We emphasize systematic identification of interaction design problems, evaluation of their impact on user experience, and the development of iterative, research-informed design alternatives guided by core HCI principles..</p>
                     </div>
                     <div class="home-image">
                         <img src="images/bolt home page.jpg" alt="Bolt Interface Redesign" onclick="openImageModal(this.src, this.alt)">
-                    </div>
-                </div>
-                
-                <div class="about-section">
-                    <h3>About Our Project</h3>
-                    <p>We are redesigning the Bolt ride-hailing application interface to address critical usability gaps. Our focus is on creating a system that acts as a collaborative partner rather than a rigid digital tool.</p>
-                    <p>Key innovations include landmark verification, progressive transparency, fail-safe communication, and adaptive interfaces for enhanced accessibility.</p>
-                    <div class="button-group">
-                        <button class="team-button" onclick="navigateTo('team')">Meet Our Team</button>
-                        <button class="project-button" onclick="navigateTo('current-project')">View Our Current Project</button>
                     </div>
                 </div>
 
@@ -1011,6 +1062,11 @@
                             </div>
                             <h4>Educational Gamification Platform</h4>
                             <p>Developed interactive learning interfaces for primary school mathematics with adaptive difficulty scaling and gamified elements.</p>
+                        </div>
+
+                        <div class="button-group">
+                            <button class="team-button" onclick="navigateTo('team')">Meet Our Team</button>
+                            <button class="project-button" onclick="navigateTo('current-project')">View Our Current Project</button>
                         </div>
                     </div>
                 </div>
@@ -1106,31 +1162,15 @@
                     <div id="part1-container" class="part-container active">
                         <div class="part-header">
                             <h2>Part 1: Project Definition</h2>
-                            <p>Team Formation & Problem Identification</p>
+                            <p>Problem Identification</p>
                         </div>
                         <div class="part-content">
-                            <div class="content-section">
-                                <h3>Team Identity</h3>
-                                <p><strong>Group Name:</strong> Group 10</p>
-                                <p><strong>Company:</strong> Drivers Ride</p>
-                                <p><strong>Course:</strong> BIT 2305 - Human Computer Interface</p>
-                            </div>
-                            
-                            <div class="content-section">
-                                <h3>Team Members</h3>
-                                <ul>
-                                    <li>Douglas Bett - SCT221-0257/2022</li>
-                                    <li>Roy Mwangi - SCT221-0232/2022</li>
-                                    <li>Christine Wambui - SCT221-0224/2022</li>
-                                    <li>Annbell Karuoya - SCT221-0362/2022</li>
-                                    <li>Neema Mutanu - SCT221-0378/2022</li>
-                                </ul>
-                            </div>
                             
                             <div class="content-section">
                                 <h3>Problem Overview</h3>
                                 <p>The Bolt ride-hailing application suffers from significant usability gaps where digital data (GPS pins and ETAs) often conflicts with physical reality. This misalignment creates cognitive load, coordination failures, and accessibility barriers for diverse user groups.</p>
-                                
+                                <p>Bridging the Gulf of Evaluation and Execution through innovative interface design that transforms the Bolt ride-hailing experience into a collaborative partnership between users and technology.</p>
+                        <p>Our project focuses on addressing GPS inaccuracies, communication breakdowns, and accessibility gaps in the current Bolt application through landmark verification, transparent system logic, and adaptive interfaces.</p>
                                 <div class="photo-gallery">
                                     <div class="photo-item">
                                         <img src="images/gps inaccuracies.jpg" alt="Current Bolt interface showing GPS inaccuracies" class="photo-img" onclick="openImageModal(this.src, this.alt)">
@@ -1304,113 +1344,245 @@
                         </div>
                     </div>
 
-                    <!-- Project Part 3 -->
+                    <!-- Project Part 3 - UPDATED WITH DESIGN ALTERNATIVES -->
                     <div id="part3-container" class="part-container">
                         <div class="part-header">
                             <h2>Part 3: Design Alternatives</h2>
-                            <p>Interface Sketches & User Scenarios</p>
+                            <p>Three Design Approaches: Baseline, Transitional, and Final Redesign</p>
                         </div>
                         <div class="part-content">
                             <div class="content-section">
-                                <h3>Design Approach Overview</h3>
-                                <p>The sketches represent low-fidelity interface concepts that translate identified HCI problems into concrete design solutions. Each sketch focuses on reducing either the Gulf of Execution or the Gulf of Evaluation.</p>
+                                <h3>Design Alternatives Overview</h3>
+                                <p>We developed three design alternatives to explore different approaches to solving the identified usability issues. Each alternative builds upon the previous one, incorporating user feedback and HCI principles to arrive at the final redesign.</p>
                             </div>
 
-                            <!-- Interface Design Solution -->
+                            <!-- Design Alternative 1: Baseline -->
                             <div class="content-section">
-                                <h3>Bolt App: HCI Redesigns for Improved Usability</h3>
-                                <div class="model-diagram">
-                                    <img src="images/Interface Design.jpeg" alt="Bolt App: HCI Redesigns for Improved Usability" onclick="openImageModal(this.src, this.alt)">
-                                    <p class="diagram-caption">The redesigned interface includes four key improvements</p>
+                                <div class="design-alternative-card baseline">
+                                    <h4><span>Design Alternative 1:</span> Existing Bolt Interface (Baseline)</h4>
+                                    <p>This design represents the current Bolt interface and serves as a baseline for identifying current usability issues.</p>
+                                    
+                                    <div class="model-diagram">
+                                        <img src="images/design alternative 1.png" alt="Existing Bolt Interface (Baseline)" onclick="openImageModal(this.src, this.alt)">
+                                        <p class="diagram-caption">Existing Bolt interface showing the baseline design with identified issues</p>
+                                    </div>
+                                    
+                                    <h5>Observed Issues</h5>
+                                    <ul>
+                                        <li>GPS-only pickup pin causes map inaccuracy</li>
+                                        <li>ETA changes without explanation (Gulf of Evaluation)</li>
+                                        <li>Single voice-call communication channel</li>
+                                        <li>No visible onboarding or accessibility controls</li>
+                                    </ul>
                                 </div>
-                                <p>The redesigned interface includes four key improvements:</p>
-                                <ul>
-                                    <li><strong>Landmark Verification for Pickup:</strong> Select a nearby landmark to confirm your pickup point</li>
-                                    <li><strong>Enhanced Communication Options:</strong> Multiple ways to contact the driver</li>
-                                    <li><strong>Guided Onboarding for New Users:</strong> Step-by-step tips for first-time users</li>
-                                    <li><strong>Accessibility Settings:</strong> Customizable options for accessibility needs</li>
-                                </ul>
                             </div>
 
-                            <!-- Image Gallery for Sketches -->
+                            <!-- Design Alternative 2: Intermediate Redesign -->
                             <div class="content-section">
-                                <h3>1. Landmark Verification for Pickup</h3>
-                                <div class="photo-gallery">
-                                    <div class="photo-item">
-                                        <img src="images/landmark verification.jpeg" alt="Landmark selection interface" class="photo-img" onclick="openImageModal(this.src, this.alt)">
-                                        <div class="photo-caption">
-                                            <h4>Landmark Selection</h4>
-                                            <p>Sketch showing landmark selection interface for precise pickup location</p>
+                                <div class="design-alternative-card transitional">
+                                    <h4><span>Design Alternative 2:</span> Intermediate Redesign (Transitional Design)</h4>
+                                    <p>Its purpose is to explore early solutions, evaluate trade-offs, and identify remaining gaps before arriving at the final design.</p>
+                                    <p>This design improves usability compared to the baseline system but intentionally does not fully resolve all issues, allowing for iterative refinement based on HCI principles.</p>
+                                    
+                                    <div class="model-diagram">
+                                        <img src="images/design alternative 2.png" alt="Intermediate Redesign (Transitional Design)" onclick="openImageModal(this.src, this.alt)">
+                                        <p class="diagram-caption">Transitional design showing early improvements while maintaining some limitations</p>
+                                    </div>
+                                    
+                                    <h5>Key Features Introduced</h5>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>1. Semi-Improved Pickup Selection</h5>
+                                        <ul>
+                                            <li>Users can slightly adjust the GPS pin</li>
+                                            <li>A short text field allows users to describe their pickup location (e.g., "near the gate")</li>
+                                        </ul>
+                                        <div class="improvement-item">
+                                            <strong>Improvement:</strong> Reduces some pickup errors compared to a fixed blue pin.
+                                        </div>
+                                        <div class="limitation-item">
+                                            <strong>Limitation:</strong> Still relies heavily on user typing and does not fully align with physical landmarks.
                                         </div>
                                     </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>2. ETA Indicator with Visual Warning</h5>
+                                        <ul>
+                                            <li>ETA changes are accompanied by a generic warning icon (⚠️)</li>
+                                            <li>No textual explanation is provided</li>
+                                        </ul>
+                                        <div class="improvement-item">
+                                            <strong>Improvement:</strong> Signals that something has changed in the system.
+                                        </div>
+                                        <div class="limitation-item">
+                                            <strong>Limitation:</strong> Users still do not understand <em>why</em> the ETA changed, leaving the Gulf of Evaluation unresolved.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>3. Manual Communication Options</h5>
+                                        <ul>
+                                            <li>Both "Call Driver" and "Chat Driver" buttons are available</li>
+                                            <li>User must manually switch when one fails</li>
+                                        </ul>
+                                        <div class="improvement-item">
+                                            <strong>Improvement:</strong> Adds redundancy compared to voice-only communication.
+                                        </div>
+                                        <div class="limitation-item">
+                                            <strong>Limitation:</strong> Manual switching increases cognitive load, especially in low-network situations.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>4. Basic Onboarding Hint</h5>
+                                        <ul>
+                                            <li>A single tooltip appears on first launch (e.g., "Tap the pin to adjust pickup")</li>
+                                        </ul>
+                                        <div class="improvement-item">
+                                            <strong>Improvement:</strong> Provides minimal guidance for first-time users.
+                                        </div>
+                                        <div class="limitation-item">
+                                            <strong>Limitation:</strong> Guidance is shallow and disappears quickly, offering no progressive learning.
+                                        </div>
+                                    </div>
+                                    
+                                    <h5>HCI Improvements Achieved</h5>
+                                    <ul>
+                                        <li>Reduced execution errors compared to the baseline</li>
+                                        <li>Slightly improved visibility of system state</li>
+                                        <li>Partial reduction in user frustration</li>
+                                    </ul>
+                                    
+                                    <h5>Remaining Usability Issues</h5>
+                                    <ul>
+                                        <li>Pickup location still mismatches real-world landmarks</li>
+                                        <li>ETA feedback remains opaque</li>
+                                        <li>Communication recovery is user-dependent</li>
+                                        <li>Accessibility options are still hidden or absent</li>
+                                    </ul>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>Why Design Alternative 2 Was Not Selected as Final</h5>
+                                        <p>Although Design Alternative 2 improved usability over the baseline system, it did not sufficiently reduce the Gulfs of Execution and Evaluation. Users still needed to interpret system behaviour, manually recover from errors, and adapt to a rigid interface. These shortcomings informed the final redesign decisions.</p>
+                                    </div>
                                 </div>
-                                <p><strong>HCI Principle:</strong> Match between system and real world</p>
-                                <p><strong>User Scenario:</strong> A commuter is waiting outside a busy shopping area where GPS accuracy is poor. The user opens the app and is prompted to confirm their pickup location using nearby landmarks.</p>
-                                <p><strong>Outcome:</strong> Pickup errors are reduced, coordination improves, and user confidence increases.</p>
+                            </div>
+
+                            <!-- Design Alternative 3: Final Redesign -->
+                            <div class="content-section">
+                                <div class="design-alternative-card final">
+                                    <h4><span>Design Alternative 3:</span> Final Redesign</h4>
+                                    
+                                    <div class="model-diagram">
+                                        <img src="images/design alternative 3 - final redesign.png" alt="Final Redesign Interface" onclick="openImageModal(this.src, this.alt)">
+                                        <p class="diagram-caption">The redesigned interface includes four key improvements</p>
+                                    </div>
+                                    
+                                    <p>The redesigned interface includes four key improvements:</p>
+                                    <ul>
+                                        <li><strong>Landmark Verification for Pickup:</strong> Select a nearby landmark to confirm your pickup point</li>
+                                        <li><strong>Enhanced Communication Options:</strong> Multiple ways to contact the driver</li>
+                                        <li><strong>Guided Onboarding for New Users:</strong> Step-by-step tips for first-time users</li>
+                                        <li><strong>Accessibility Settings:</strong> Customizable options for accessibility needs</li>
+                                    </ul>
+                                    
+                                    <h5>Key Improvements in Final Redesign</h5>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>1. Landmark Verification for Pickup</h5>
+                                        <p><strong>HCI Principle:</strong> Match between system and real world</p>
+                                        <p><strong>User Scenario:</strong> A commuter is waiting outside a busy shopping area where GPS accuracy is poor. The user opens the app and is prompted to confirm their pickup location using nearby landmarks.</p>
+                                        <p><strong>Outcome:</strong> Pickup errors are reduced, coordination improves, and user confidence increases.</p>
+                                        <div class="photo-gallery">
+                                            <div class="photo-item">
+                                                <!-- <img src="images/landmark verification.jpeg" alt="Landmark selection interface" class="photo-img" onclick="openImageModal(this.src, this.alt)"> -->
+                                                <!-- <div class="photo-caption">
+                                                    <h4>Landmark Selection</h4>
+                                                    <p>Sketch showing landmark selection interface for precise pickup location</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>2. Transparent ETA Feedback</h5>
+                                        <p><strong>HCI Principle:</strong> Visibility of system status</p>
+                                        <p><strong>User Scenario:</strong> A passenger notices their ETA has changed from 3 minutes to 6 minutes. The app displays "+3 min --- Heavy traffic detected."</p>
+                                        <p><strong>Outcome:</strong> Users no longer assume the system is faulty or unreliable, maintaining trust and reducing anxiety.</p>
+                                        <div class="photo-gallery">
+                                            <div class="photo-item">
+                                                <!-- <img src="images/transparent eta feedback.jpeg" alt="ETA with explanatory labels" class="photo-img" onclick="openImageModal(this.src, this.alt)"> -->
+                                                <!-- <div class="photo-caption">
+                                                    <h4>Transparent ETA Display</h4>
+                                                    <p>Sketch showing ETA with explanatory labels for time changes</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>3. Enhanced Communication Options</h5>
+                                        <p><strong>HCI Principle:</strong> Error tolerance</p>
+                                        <p><strong>User Scenario:</strong> A user attempts to call the driver in a low-network area. The voice call fails, and the interface automatically presents alternatives like in-app chat.</p>
+                                        <p><strong>Outcome:</strong> Coordination remains possible despite technical failures, preserving task continuity.</p>
+                                        <div class="photo-gallery">
+                                            <div class="photo-item">
+                                                <!-- <img src="images/enhanced communication.jpeg" alt="Multi-channel communication" class="photo-img" onclick="openImageModal(this.src, this.alt)"> -->
+                                                <!-- <div class="photo-caption">
+                                                    <h4>Multi-channel Communication</h4>
+                                                    <p>Sketch showing multiple communication options with driver</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>4. Guided Onboarding for New Users</h5>
+                                        <p><strong>HCI Principle:</strong> Recognition rather than recall</p>
+                                        <p><strong>User Scenario:</strong> A first-time user opens the Bolt app. The interface highlights the pickup pin with a tooltip: "Tap here to set your pickup point."</p>
+                                        <p><strong>Outcome:</strong> The learning curve is reduced, increasing adoption and early user satisfaction.</p>
+                                        <div class="photo-gallery">
+                                            <div class="photo-item">
+                                                <!-- <img src="images/guided onboarding.jpeg" alt="Progressive disclosure interface" class="photo-img" onclick="openImageModal(this.src, this.alt)"> -->
+                                                <!-- <div class="photo-caption">
+                                                    <h4>Guided Onboarding</h4>
+                                                    <p>Sketch showing progressive disclosure for new users</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>5. Accessibility Settings</h5>
+                                        <p><strong>HCI Principle:</strong> Inclusive design</p>
+                                        <p><strong>User Scenario:</strong> A user with visual impairment opens the accessibility settings and enables high-contrast mode and larger text.</p>
+                                        <p><strong>Outcome:</strong> Users with disabilities can complete tasks independently, promoting inclusivity and fairness.</p>
+                                        <div class="photo-gallery">
+                                            <div class="photo-item">
+                                                <!-- <img src="images/accessibility options.jpeg" alt="Adaptive interface options" class="photo-img" onclick="openImageModal(this.src, this.alt)"> -->
+                                                <!-- <div class="photo-caption">
+                                                    <h4>Accessibility Options</h4>
+                                                    <p>Sketch showing adaptive interface options for accessibility</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-detail">
+                                        <h5>What Was Refined or Dropped After Design Alternative 2</h5>
+                                        <ul>
+                                            <li>Removed free-text pickup descriptions due to ambiguity</li>
+                                            <li>Removed ETA warning icons without explanations</li>
+                                            <li>Removed manual communication switching</li>
+                                            <li>Removed single tooltip onboarding in favour of progressive guidance</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="content-section">
-                                <h3>2. Transparent ETA Feedback</h3>
-                                <div class="photo-gallery">
-                                    <div class="photo-item">
-                                        <img src="images/transparent eta feedback.jpeg" alt="ETA with explanatory labels" class="photo-img" onclick="openImageModal(this.src, this.alt)">
-                                        <div class="photo-caption">
-                                            <h4>Transparent ETA Display</h4>
-                                            <p>Sketch showing ETA with explanatory labels for time changes</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><strong>HCI Principle:</strong> Visibility of system status</p>
-                                <p><strong>User Scenario:</strong> A passenger notices their ETA has changed from 3 minutes to 6 minutes. The app displays "+3 min — Heavy traffic detected."</p>
-                                <p><strong>Outcome:</strong> Users no longer assume the system is faulty or unreliable, maintaining trust and reducing anxiety.</p>
-                            </div>
-
-                            <div class="content-section">
-                                <h3>3. Enhanced Communication Options</h3>
-                                <div class="photo-gallery">
-                                    <div class="photo-item">
-                                        <img src="images/enhanced communication.jpeg" alt="Multi-channel communication" class="photo-img" onclick="openImageModal(this.src, this.alt)">
-                                        <div class="photo-caption">
-                                            <h4>Multi-channel Communication</h4>
-                                            <p>Sketch showing multiple communication options with driver</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><strong>HCI Principle:</strong> Error tolerance</p>
-                                <p><strong>User Scenario:</strong> A user attempts to call the driver in a low-network area. The voice call fails, and the interface automatically presents alternatives like in-app chat.</p>
-                                <p><strong>Outcome:</strong> Coordination remains possible despite technical failures, preserving task continuity.</p>
-                            </div>
-
-                            <div class="content-section">
-                                <h3>4. Guided Onboarding for New Users</h3>
-                                <div class="photo-gallery">
-                                    <div class="photo-item">
-                                        <img src="images/guided onboarding.jpeg" alt="Progressive disclosure interface" class="photo-img" onclick="openImageModal(this.src, this.alt)">
-                                        <div class="photo-caption">
-                                            <h4>Guided Onboarding</h4>
-                                            <p>Sketch showing progressive disclosure for new users</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><strong>HCI Principle:</strong> Recognition rather than recall</p>
-                                <p><strong>User Scenario:</strong> A first-time user opens the Bolt app. The interface highlights the pickup pin with a tooltip: "Tap here to set your pickup point."</p>
-                                <p><strong>Outcome:</strong> The learning curve is reduced, increasing adoption and early user satisfaction.</p>
-                            </div>
-
-                            <div class="content-section">
-                                <h3>5. Accessibility Settings</h3>
-                                <div class="photo-gallery">
-                                    <div class="photo-item">
-                                        <img src="images/accessibility options.jpeg" alt="Adaptive interface options" class="photo-img" onclick="openImageModal(this.src, this.alt)">
-                                        <div class="photo-caption">
-                                            <h4>Accessibility Options</h4>
-                                            <p>Sketch showing adaptive interface options for accessibility</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><strong>HCI Principle:</strong> Inclusive design</p>
-                                <p><strong>User Scenario:</strong> A user with visual impairment opens the accessibility settings and enables high-contrast mode and larger text.</p>
-                                <p><strong>Outcome:</strong> Users with disabilities can complete tasks independently, promoting inclusivity and fairness.</p>
+                                <h3>Design Evolution Summary</h3>
+                                <p>The three design alternatives represent a journey from identifying problems (Alternative 1) to exploring partial solutions (Alternative 2) and finally arriving at a comprehensive redesign (Alternative 3). Each iteration was informed by HCI principles and user feedback, resulting in a final design that effectively bridges the Gulfs of Execution and Evaluation while promoting accessibility and user empowerment.</p>
                             </div>
                         </div>
                     </div>
